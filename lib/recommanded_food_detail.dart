@@ -84,11 +84,20 @@ class RecomandedFoodDetail extends StatelessWidget {
                     backgroundcolor: Colors.greenAccent,
                     icon: Icons.remove),
                    BigText(text: "\12.88"+" x "+" 0 ",color: Colors.black,size: Dimensions.font26,),
-                AppIcon(
-                    iconsize: Dimensions.iconsize24,
-                    iconcolor: Colors.white,
-                    backgroundcolor: Colors.greenAccent,
-                    icon: Icons.add),
+                MaterialButton(
+                  minWidth: 50,
+                  height: 50,
+                  padding: EdgeInsets.zero,
+                  splashColor: Colors.red,
+                  onPressed: (){
+
+                  },
+                    child: AppIcon(
+                      iconsize: Dimensions.iconsize24,
+                      iconcolor: Colors.white,
+                      backgroundcolor: Colors.greenAccent,
+                      icon: Icons.add),
+                ),
               ],
             ),
           ),
@@ -107,7 +116,7 @@ class RecomandedFoodDetail extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
-                  padding: EdgeInsets.only(top: Dimensions.height20,bottom: Dimensions.height20,left: Dimensions.width20,right: Dimensions.width20),
+                  padding: EdgeInsets.only(top: Dimensions.height10,bottom: Dimensions.height10,left: Dimensions.width20,right: Dimensions.width20),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(Dimensions.radius20),
                     color: Colors.white,
@@ -118,8 +127,8 @@ class RecomandedFoodDetail extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.only(top: Dimensions.height20,bottom: Dimensions.height20,left: Dimensions.width20,right: Dimensions.width20),
-                  child: BigText(text:"\$10 | Add to Cart",color: Colors.white, ),
+                  padding: EdgeInsets.only(top: Dimensions.height10,bottom: Dimensions.height10,left: Dimensions.width20,right: Dimensions.width20),
+                  child: BigText(text:"\$10 | Add to Cart",color: Colors.white,size: 5, ),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(Dimensions.radius20),
                     color: Colors.greenAccent,
